@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quote Generator</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="card">
+            <div class="quote-container">
+                <blockquote id="quote">Your amazing quotes here...</blockquote>
+            </div>
+            <div class="controls">
+                <select id="category" title="Category">
+                    <option value="inspirational">Inspirational</option>
+                    <option value="funny">Funny</option>
+                </select>
+                <button id="generate">Generate</button>
+            </div>
+            <div id="share-popup" class="popup">
+                <p>Share this quote:</p>
+                <i id="close-icon" class="fas fa-times"></i>
+                <textarea id="quote-code" readonly title="Share Item"></textarea>
+                <button id="share-facebook">Share on <i class="fab fa-facebook"></i></button>
+                <button id="share-twitter">Share on <i class="fab fa-twitter"></i></button>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
